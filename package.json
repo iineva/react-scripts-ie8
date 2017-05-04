@@ -2,13 +2,13 @@
   "name": "react-scripts-ie8",
   "version": "0.9.5",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "iineva/create-react-app-ie8",
+  "repository": "iineva/react-scripts-ie8",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
   },
   "bugs": {
-    "url": "https://github.com/iineva/create-react-app-ie8/issues"
+    "url": "https://github.com/iineva/react-scripts-ie8/issues"
   },
   "files": [
     "babelrc",
