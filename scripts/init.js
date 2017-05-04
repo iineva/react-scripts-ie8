@@ -21,15 +21,18 @@ module.exports = function(appPath, appName, verbose, originalDirectory, template
   var useYarn = fs.existsSync(path.join(appPath, 'yarn.lock'));
 
   // Copy over some of the devDependencies
-  appPackage.dependencies = appPackage.dependencies || {};
+  appPackage.dependencies = appPackage.dependencies || {
+    'react': '0.14.8',
+    'react-dom': '0.14.8',
+  };
   appPackage.devDependencies = appPackage.devDependencies || {};
 
   // Setup the script rules
   appPackage.scripts = {
-    'start': 'react-scripts start',
-    'build': 'react-scripts build',
-    'test': 'react-scripts test --env=jsdom',
-    'eject': 'react-scripts eject'
+    start: 'react-scripts-ie8 start',
+    build: 'react-scripts-ie8 build',
+    test: 'react-scripts-ie8 test --env=jsdom',
+    eject: 'react-scripts-ie8 eject',
   };
 
   fs.writeFileSync(

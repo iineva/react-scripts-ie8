@@ -248,15 +248,15 @@ module.exports = {
     // Minify the code.
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        screw_ie8: true, // React doesn't support IE8
+        screw_ie8: false, // React doesn't support IE8
         warnings: false
       },
       mangle: {
-        screw_ie8: true
+        screw_ie8: false
       },
       output: {
         comments: false,
-        screw_ie8: true
+        screw_ie8: false
       }
     }),
     // Note: this won't work without ExtractTextPlugin.extract(..) in `loaders`.
