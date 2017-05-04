@@ -10,8 +10,8 @@
 // @remove-on-eject-end
 'use strict';
 
-require('es5-shim/es5-shim.min.js');
-require('es5-shim/es5-sham.min.js');
+require('es5-shim');
+require('es5-shim/es5-sham');
 require('console-polyfill');
 
 if (typeof Promise === 'undefined') {
