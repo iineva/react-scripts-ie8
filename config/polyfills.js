@@ -10,10 +10,6 @@
 // @remove-on-eject-end
 'use strict';
 
-require('es5-shim');
-require('es5-shim/es5-sham');
-require('console-polyfill');
-
 if (typeof Promise === 'undefined') {
   // Rejection tracking prevents a common issue where React gets into an
   // inconsistent state due to an error, but it gets swallowed by a Promise,

@@ -251,9 +251,7 @@ module.exports = {
         screw_ie8: false, // React doesn't support IE8
         warnings: false
       },
-      mangle: {
-        screw_ie8: false
-      },
+      mangle: false,
       output: {
         comments: false,
         screw_ie8: false
